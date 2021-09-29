@@ -4,65 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operasjon Egon</title>
+    <title>Meet and Eat</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
+    <header id="top">
             <!--Logo and name of the restaurant (fictional or real?)-->
+            <img src="assets/img/logo.png" alt="logo" width="90%" height="auto">
     </header>
 
     <nav>
-        <!--Navigation to different sites (should be consistent on every page)-->
+       <div class="navT">
+            <ul>
+                <li><a href="#forretter">Forretter</a></li>
+                <li><a href="#hovedretter">Hovedretter</a></li>
+                <li><a href="#dessert">Desserter</a></li>
+            </ul>
+       </div>
     </nav>
 
     <main>
         <section>
-            <!--Menu should be in here-->
-            <!--For the difference between <article> and <section> see https://www.w3schools.com/html/html5_semantic_elements.asp -->
-            
+            <!--Meny skal være her-->   
             <article>
                 <div> <!-- alle div'sa skal ha display:flex og ordered content for optimal endring?-->
-                    <img src="xxx.png" alt="xxx" width="250" height="300"> <!-- optimal size? Mobile friendly? -->
+                    <div class="left">
+                        <img src="assets/img/appetizer.png" alt="xxx" width="80%" height="auto">
+                    </div>
+                       
                     
-                    <p> </p>
+                    <div class="right">
+                        
+                        <div class="DasHeader">
+                            <h2 id="forretter">Forretter</h2>
+                        </div>
+                        
+                        <div class = "DasList">
+                            <dl>
+                                <dt>Suppe</dt>
+                                    <dd>Hjemmelaget tomatsuppe med pasta.</dd>
+                                        <dd id="allergener">allergier: melk </dd>
+                                <dt>Te</dt>
+                                    <dd>Grønn te hentet fra India og dampet umiddelbart etter høsting.</dd>
+                                    <dt>Røkt Laks</dt>
+                                    <dd>Røkt laks fra et eget røkeri.</dd>
+                                    <dd id="allergener">allergier: fisk</dd>
+                                </dl>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class ="sRight">
+                        <aside>
+                            <p>123,-</p>
+                            <p>2345,-</p>
+                        </aside>
+                    </div>
                 </div>
             </article>
                 
             <article>
                 <div>
-                    <img src="xxx.png" alt="xxx" width="250" height="300">
-                    
-                    
-                    <ul>
-                        <li>Forretter</li>
-                            <ul>
-                                <li>Suppe</li>
-                                <li>Te</li>
-                                <li>Røkt Laks</li>
-                            </ul>
-                        <li>Hovedretter</li>
-                            <ul>
-                                <li>Hamburger</li>
-                                <li>Pizza</li>
-                            </ul>
-                    </ul>
+                    <div class="left"><img src="assets/img/dinner.png" alt="xxx" width="100%" height="auto"> </div>
+
+                    <div class="right">
+
+                        <div class="DasHeader">
+                            <h2 id="hovedretter">Hovedretter</h2>
+                        </div>
+                        
+                        <div class="DasList">
+                            <dl>
+                                <dt>Hamburger</dt>
+                                    <dd>En klassisk Amerikansk Hamburger med løk, tomat og sylteagurk</dd>
+                                        <dd id="allergener">allergier: sesam, melk, egg, soya og sennep  </dd>
+                                <dt>Pizza</dt>
+                                    <dd>Italisk pizza med tynn bunn og toppet med mozzarella, sjampinjong og spekepølse</dd>
+                                        <dd id="allergener">allegier: melk, egg og gluten </dd>
+                                <dt>Biffstek m/ettellerannet</dt>
+                                    <dd>Saftig, mørt og god farge på en deilig biffstek</dd>
+                                        <dd id="allergener">allergier: egg</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class ="sRight">
+                        <aside>
+                            <p>123,-</p>
+                            <p>2345,-</p>
+                        </aside>
+                    </div>
+
                 </div>
             </article>
                 
             <article>
                 <div>
-                    <img src="xxx.png" alt="xxx" width="250" height="300">
                     
-                    <p> </p>
+                    <div class="left"><img src="assets/img/dessert.png" alt="xxx" width="100%" height="auto"></div>
+                
+                <div class="right">
+                    <div class="DasHeader">
+                        <h2 id="desserter">Dessert</h2>
+                    </div>
+
+                    <div class="DasList">
+                        <dl>
+                            <dt>Iskrem med brownie</dt>
+                                <dd>Deilig iskrem med en brownie bit </dd>
+                                    <dd id="allergener">allergier: melk og gluten</dd>
+                            <dt>Vaffler</dt>
+                                <dd>Vaffler laget med vår egen vaffelrøre som gir gode og deilige vaffler</dd>
+                                    <dd id="allergener">allergier: melk, egg og gluten</dd>
+                        </dl>
+                    </div>
                 </div>
-            </article>
-            
+
+                    <div class ="sRight">
+                        <aside>
+                            <p>123,-</p>
+                            <p>2345,-</p>
+                        </aside>
+                    </div>
+
+                </div>
+            </article>   
         </section>
     </main>
 
     <footer>
-        <!--Contact info, back to top etc.-->
+        <hr>
+        <!--Contact info, back to top osv.-->
+        <h3>Kontaktinformasjon</h3>
+        <p>Kontakt oss via telefon: 1234567890</p>
+        <p>Kontakt oss via e-mail: meetandeat@gmail.com</p>
+        <p>Adresse: Osloveien 123</p>
+        <p><a>Tilbake til toppen</a></p>
+        <p id = "top"><a href="#top">Tilbake til toppen</a></p> <!--Lag internlink til toppen av siden-->
+        <p id = "rapport"><a href="rapport.html"> Her kan du se rapporten vår</a> </p><!--Lag link til en ny side hvor rapporten vår står-->
     </footer>
 </body>
 </html>

@@ -1,0 +1,145 @@
+body{
+    background-color: #9DAA9D;
+    font-family: serif;
+}
+header{
+    text-align: center;
+}
+
+main{
+    border: green solid 2px;
+    justify-content: center;
+    margin:0px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    
+
+}
+section{
+    border: black solid 2px;
+    max-width: auto;
+    margin:0px;
+}
+article{
+    border: rgb(255, 166, 0) solid 0px;
+    max-width: auto;
+    margin: 0px;
+
+}
+div{
+    border: blue solid 0px;
+    max-width: auto;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.left{
+    margin:10px 0px 10px 10px;
+    border: red solid 0px;
+    order: 1;
+    width: 25%;
+}
+
+.right{
+    border: red solid 0px;
+    margin: 0px 10px 0px 10px;
+    order: 2;
+    width: 60%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sRight{
+    order: 3;
+
+}
+#forretter{
+    margin: 5px 0px 5px 5px;
+    text-align: center;
+}
+
+.dasHeader{
+    order: 1;
+    width: 100%;
+}
+.dasList{
+    order: 2;
+    width: 100%;
+
+}
+
+
+/* Nav */
+.navT{
+    justify-content: center;
+}
+
+.navT > ul{
+    /*Fjerner 'bulletpoint' og mellomrom */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+ul > li{
+    display: inline-block;
+}
+
+
+
+ul > li:hover{
+    /*Lager bokser som blir mørkere når du holder muspekeren over den, og forandrer muspeker*/
+    background-color: rgb(112, 155, 123);
+    cursor: pointer;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+
+
+/*contents*/
+
+#allergener{
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+dd{
+    font-size: 18px;
+}
+
+aside > p {
+    display: block;
+    width: fill;
+}
+
+#top > a{
+    display: block;
+    color: white;
+    padding: 8px;
+}
+#top > a:hover{
+    background-color: #6A776A
+    ;
+    cursor: pointer;
+}
+#rapport > a{
+    display: block;
+    color: white;
+    padding: 8px;
+}
+#rapport > a:hover{
+    background-color: #6A776A;
+    cursor: pointer;
+}
