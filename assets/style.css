@@ -156,7 +156,7 @@ aside:first-child {
     font-weight: bold;
 }
 
-#top > a{
+#tilbakeTilTop > a{
     display: block;
     border:rgb(53, 117, 53) solid;
     border-radius: 15px;
@@ -167,7 +167,7 @@ aside:first-child {
     text-decoration: none;
     float: right;
 }
-#top > a:hover{
+#tilbakeTilTop > a:hover{
     background-color: #6A776A
     ;
     cursor: pointer;
@@ -192,6 +192,7 @@ aside:first-child {
 footer {
     display: inline-block;
     margin-left: 3%;
+    width: 50vw;
 }
 .footerFix{
     order: 2;
