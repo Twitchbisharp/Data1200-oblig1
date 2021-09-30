@@ -61,7 +61,7 @@ div{
     flex-wrap: wrap;
 }
 
-h2{
+h1{
     margin: 5px 0px 5px 20px;
     text-align: center;
 }
@@ -120,7 +120,7 @@ li a {
 
 /*contents*/
 
-#allergener{
+.allergener{
     font-weight: bolder;
     font-size: 13px;
     text-transform: uppercase;
