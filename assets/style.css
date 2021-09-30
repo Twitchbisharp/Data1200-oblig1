@@ -176,8 +176,9 @@ aside:first-child {
     display: block;
     border:rgb(53, 117, 53) solid;
     border-radius: 15px;
+    max-width: auto;
     color: white;
-    width: 15vw;
+    width: 20vw;
     text-align: center;
     padding: 8px;
     margin-right: 1%;
