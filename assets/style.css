@@ -1,13 +1,15 @@
 body{
     background-color: #9DAA9D;
-    font-family: serif;
+    font-family: 'Garamond', serif;
+    max-height: 110vw;
 }
 header{
     text-align: center;
 }
 
 main{
-    border: green solid 2px;
+    border: green solid 0px;
+    
     justify-content: center;
     margin:0px;
     max-width: 100%;
@@ -18,7 +20,7 @@ main{
 
 }
 section{
-    border: black solid 2px;
+    border: black solid 0px;
     max-width: auto;
     margin:0px;
 }
@@ -30,8 +32,8 @@ article{
 }
 div{
     border: blue solid 0px;
-    max-width: auto;
-    margin: 0px;
+    max-width: 100%;
+    margin: 10px 0px 10px 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -40,12 +42,17 @@ div{
     margin:10px 0px 10px 10px;
     border: red solid 0px;
     order: 1;
-    width: 25%;
+    width: 20%;
+    
+
+    
 }
 
 .right{
     border: red solid 0px;
-    margin: 0px 10px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 35px;
+    margin: 0px 10px 0px 0px;
     order: 2;
     width: 60%;
     justify-content: center;
@@ -53,22 +60,21 @@ div{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.sRight{
-    order: 3;
 
-}
-#forretter{
-    margin: 5px 0px 5px 5px;
+h2{
+    margin: 5px 0px 5px 20px;
     text-align: center;
 }
 
-.dasHeader{
+
+.DasHeader{
     order: 1;
     width: 100%;
 }
-.dasList{
+.DasList{
     order: 2;
-    width: 100%;
+    max-width: 100%;
+    margin: 0px 0px 0px 15px;
 
 }
 
@@ -84,14 +90,20 @@ div{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    
 }
 
 
 ul > li{
     display: inline-block;
+    border:rgb(53, 117, 53) solid;
+    border-radius: 15px;
 }
 
-
+li > a {
+    /*Fjerner understreker fra linker*/
+    text-decoration: none;
+}
 
 ul > li:hover{
     /*Lager bokser som blir mørkere når du holder muspekeren over den, og forandrer muspeker*/
@@ -106,8 +118,6 @@ li a {
     padding: 16px;
 }
 
-
-
 /*contents*/
 
 #allergener{
@@ -115,19 +125,47 @@ li a {
     font-size: 13px;
     text-transform: uppercase;
 }
+
+dt {
+    margin: 0 2%;
+}
+
 dd{
     font-size: 18px;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+dl {
+    width: 100%;
 }
 
 aside > p {
     display: block;
     width: fill;
+    margin-top: 60%;
+
+}
+
+aside:first-child {
+    margin-top: 250%;
+}
+
+.pris {
+    float: right;
+    font-weight: bold;
 }
 
 #top > a{
     display: block;
+    border:rgb(53, 117, 53) solid;
+    border-radius: 15px;
     color: white;
+    width: 15vw;
+    text-align: center;
     padding: 8px;
+    text-decoration: none;
+    float: right;
 }
 #top > a:hover{
     background-color: #6A776A
@@ -136,10 +174,34 @@ aside > p {
 }
 #rapport > a{
     display: block;
+    border:rgb(53, 117, 53) solid;
+    border-radius: 15px;
     color: white;
+    width: 15vw;
+    text-align: center;
     padding: 8px;
+    margin-right: 1%;
+    text-decoration: none;
+    float: right;
 }
 #rapport > a:hover{
     background-color: #6A776A;
     cursor: pointer;
+}
+
+footer {
+    display: inline-block;
+    margin-left: 3%;
+}
+.footerFix{
+    order: 2;
+    display: block;
+}
+.mainFix{
+    order: 1;
+}
+.contentGroup{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
 }
