@@ -43,14 +43,11 @@ div{
     border: red solid 0px;
     order: 1;
     width: 20%;
-    
-
-    
 }
 
 .right{
     border: red solid 0px;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(0, 0, 0, 0.185);
     border-radius: 35px;
     margin: 0px 10px 0px 0px;
     order: 2;
@@ -66,6 +63,13 @@ h1{
     text-align: center;
 }
 
+h2{
+    margin: 5px 0px 5px 20px;
+    text-align: center;
+}
+#forretter, #hovedretter, #dessert{
+    justify-content: right;
+}
 
 .DasHeader{
     order: 1;
@@ -75,7 +79,6 @@ h1{
     order: 2;
     max-width: 100%;
     margin: 0px 0px 0px 15px;
-
 }
 
 
@@ -147,9 +150,7 @@ aside > p {
 
 }
 
-aside:first-child {
-    margin-top: 250%;
-}
+
 
 .pris {
     float: right;
@@ -201,6 +202,7 @@ footer {
 }
 .mainFix{
     order: 1;
+    justify-content:center;
 }
 .contentGroup{
     display: flex;
