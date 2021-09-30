@@ -67,9 +67,6 @@ h2{
     margin: 5px 0px 5px 20px;
     text-align: center;
 }
-#forretter, #hovedretter, #dessert{
-    justify-content: right;
-}
 
 .DasHeader{
     order: 1;

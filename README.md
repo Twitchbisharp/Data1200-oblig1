@@ -30,3 +30,6 @@ Task:
 * Main ingredients or description for each dish
 
 * Easy to find opening hours, location and contact information
+
+
+Link to the final website: https://twitchbisharp.github.io/Data1200-oblig1/
